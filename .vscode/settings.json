@@ -1,0 +1,11 @@
+{
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#173134",
+        "titleBar.activeBackground": "#214548",
+        "titleBar.activeForeground": "#F6FAFB"
+    },
+    "css.validate": false,
+    "tailwindCSS.emmetCompletions": true,
+    "liveServer.settings.port": 5503
+    
+}

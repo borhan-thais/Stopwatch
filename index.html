@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="./src/output.css" />
+  </head>
+  <body>
+    <div class="flex min-h-screen gap-4 items-center justify-center bg-slate-900 text-xl text-black">
+      <div class="flex w-80 flex-col gap-4 rounded-lg border bg-yellow-500 p-8">
+        <p class="text-center">STOPWATCH</p>
+        <div id="inputs" class="flex flex-row items-center justify-center gap-2 pt-2.5">
+          <input id="input1" type="number" min="0" max="59" value="00" class="w-32 rounded border p-1 text-center text-blue-500" />
+          <span>:</span>
+          <input id="input2" type="number" min="0" max="59" value="00" class="w-32 rounded border p-1 text-center text-blue-500" />
+        </div>
+        <div id="buttons" class="pl-10 flex flex-row gap-4">
+          <button id="start-button" class="w-20 rounded bg-green-900 p-2 text-white">Start</button>
+          <button id="pause-button" class="hidden w-20 rounded bg-orange-500 p-2 text-black">Pause</button>
+          <button id="reset-button" class="w-20 rounded bg-violet-900 p-2 text-white">Reset</button>
+        </div>
+      </div>
+      <div class="w-80 border bg-orange-500">
+        <div id="history">
+        </div>
+        <p class="text-center text-white">History</p>
+        <div id="all-history"></div>
+        
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
